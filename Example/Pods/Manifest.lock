@@ -1,0 +1,16 @@
+PODS:
+  - MGSettingsKit (0.1.0)
+
+DEPENDENCIES:
+  - MGSettingsKit (from `../`)
+
+EXTERNAL SOURCES:
+  MGSettingsKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MGSettingsKit: 3d9df386d0a20416f35a44e6ec6be946ae357dd1
+
+PODFILE CHECKSUM: a54f14357f02169785efe0094dbaff42ccbb0f6a
+
+COCOAPODS: 1.6.1

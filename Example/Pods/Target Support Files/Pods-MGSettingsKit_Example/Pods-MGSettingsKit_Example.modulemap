@@ -1,0 +1,6 @@
+framework module Pods_MGSettingsKit_Example {
+  umbrella header "Pods-MGSettingsKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
