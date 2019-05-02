@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MGSettingsKit_Example' do
+  pod 'MGSettingsKit', :path => '../'
+
+  target 'MGSettingsKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
