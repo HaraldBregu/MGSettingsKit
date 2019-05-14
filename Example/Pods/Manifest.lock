@@ -1,16 +1,37 @@
 PODS:
-  - MGSettingsKit (0.1.0)
+  - FontBlaster (4.1.0)
+  - MGSettingsKit (0.1.1)
+  - MGTemplateKit (0.2.0):
+    - FontBlaster
+    - UIColor_Hex_Swift (~> 4.2.0)
+  - UIColor_Hex_Swift (4.2.0)
 
 DEPENDENCIES:
   - MGSettingsKit (from `../`)
+  - "MGTemplateKit (from `https://haraldbregu:4a4d1162147e80549f22cafb59060bdf59c4934a@github.com/HaraldBregu/MGTemplateKit.git`)"
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FontBlaster
+    - UIColor_Hex_Swift
 
 EXTERNAL SOURCES:
   MGSettingsKit:
     :path: "../"
+  MGTemplateKit:
+    :git: "https://haraldbregu:4a4d1162147e80549f22cafb59060bdf59c4934a@github.com/HaraldBregu/MGTemplateKit.git"
+
+CHECKOUT OPTIONS:
+  MGTemplateKit:
+    :commit: f47404df4d8b6c1ab8b5d73e5a11afd66fddad6c
+    :git: "https://haraldbregu:4a4d1162147e80549f22cafb59060bdf59c4934a@github.com/HaraldBregu/MGTemplateKit.git"
 
 SPEC CHECKSUMS:
-  MGSettingsKit: 1a49726b890b1e928bec3e43212eda180460088b
+  FontBlaster: 127aa66419478d1c62926c7fdb39841633344a45
+  MGSettingsKit: 4e027f3cfd7b57afbc0a0ba6a8a28a4cccc3d9b7
+  MGTemplateKit: 4936ddc393c785a2986d04aa0eff09d66833ed37
+  UIColor_Hex_Swift: bc07fc197421ee896b9ed6dcfa2054b7fbf75145
 
-PODFILE CHECKSUM: a72467d9d71aa6a218fe49b62a0b8a2560826567
+PODFILE CHECKSUM: c42530b7d2ad3b0980ca504cad026a6dd0234b8c
 
 COCOAPODS: 1.6.1

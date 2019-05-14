@@ -7,149 +7,463 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		312906C571292D11DBB0EF758B98B55C /* MGSettingsKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62967E2EE11AD4601AE76C60D059E3B9 /* MGSettingsKit-dummy.m */; };
-		4CF972F80884C62D57C8543BC2BE80CE /* Pods-MGSettingsKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EA575C92464F187D0E9D865E3622FBF /* Pods-MGSettingsKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D7C5492C373BD56D2480EF6C497A673 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		4F87F89F1EEA38B4E56C3805B4683D5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		61AFA605961302F1CDFC2B2EC9398B0D /* MGSettingsKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F4662E6FF3DBEA74611F8E2FC0D137 /* MGSettingsKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		745613D8548E7DA1673F9D442014293D /* Pods-MGSettingsKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EAA8D2F4C94E5DDDBFB42BC7361A46 /* Pods-MGSettingsKit_Example-dummy.m */; };
-		8FF95683664A1370238BBD1821589741 /* MGSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D8F4F896C20D4446D6C07314D5FE379 /* MGSettings.storyboard */; };
-		C33C6CE06AF930A909E8C5918CF01863 /* MGSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9844D8D1534B84B9EF6F17AFD85E7EF9 /* MGSettings.swift */; };
-		C43A6AFF3D755A916864AB4CA89E2A9C /* MGSettingsKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F15C6A9D72B9E42EEA589FFA12AA63F8 /* MGSettingsKit.bundle */; };
+		01055A8BE96E25F51E0DC6255A7CA5F1 /* MGFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ABC1453CCD5C6567604B83951B06FD /* MGFont.swift */; };
+		08176FE0DEB7021A8A8A95BDB1D0EBF1 /* MGSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF270E0ED21B3D653EA736020DD6710 /* MGSettings.swift */; };
+		09974E61524C87A1453B4C55D8BE8D41 /* SwiftIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE11E21AE57DF5AE9BCDC8D1EB4930AB /* SwiftIcons.swift */; };
+		0C95EC887A3D6CA0386944BCC732351D /* MGTemplateKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C3263B4055735CEB651DDEA508E14C29 /* MGTemplateKit.bundle */; };
+		1C5A30702C5191F12E13FE5D1737D616 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39396C8415941F2FC98A3CEABB20F6C8 /* Roboto-ThinItalic.ttf */; };
+		1DB638079D70E05211323033C260A496 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7418E02DFA09E2DD2DFF5327BF7C0F91 /* Roboto-LightItalic.ttf */; };
+		20FD89E8225D91337CCF10DDD91CA569 /* UIColor_Hex_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7B008EA9518EB041B8BB00019243331 /* UIColor_Hex_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23E319649B495563EDC3BD2E581F8C98 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 440E2F5A4B9FE6D045AF5046C191FCB8 /* Ionicons.ttf */; };
+		3312FB3B7A18CEAED4EDB92D875089F9 /* FontAwesomeBrands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CF25EE6978465725B35B94449EBDE3C /* FontAwesomeBrands.ttf */; };
+		3872CCEFC766B79B778084AFE7B88309 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CD32C42EFA4E059DE8CACD2218DF40 /* UIColorExtension.swift */; };
+		3D62C0C23D1C156788457B2557370C6D /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14DF59256F66F3B83078999ADC27DDB6 /* Roboto-Italic.ttf */; };
+		3DB399C940F1D16B73B4030832322BAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957F2A4939714A67E9711A00A21A839B /* Foundation.framework */; };
+		400E34179513909471806AC11D089D62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957F2A4939714A67E9711A00A21A839B /* Foundation.framework */; };
+		42E15E78A7F6F6DE2544E04EB0CE4F59 /* MGSettingsKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9AB5FDB3150FAA4A17A7D7AD9D073F1B /* MGSettingsKit.bundle */; };
+		43003BC6BD1523DCC2BEBD2EA5DA33E9 /* Pods-MGSettingsKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EA575C92464F187D0E9D865E3622FBF /* Pods-MGSettingsKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		436F5CDA17A17A303ABB27A385D8F315 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45A8253F20CC5B1B17C5952F3DCDC262 /* Roboto-MediumItalic.ttf */; };
+		43DA1E70248D4CB09305C0D26E1B93BD /* UIColor_Hex_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A911A98EAACD5ADAC3DDB40B00365E6C /* UIColor_Hex_Swift.framework */; };
+		4603C7B243497B95B03551A3309966FC /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C51A7518D46E86F609533235ADE65833 /* Roboto-Black.ttf */; };
+		46775B1E27E62CBCBBA58ED9D03B5543 /* HEXColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AC864C24F92962F43A95711064556F /* HEXColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48E1D070FCDA1CB1B8E7AF09C5D0D940 /* FontBlaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8B2B1D1259F8E83FA2814A04108824 /* FontBlaster.framework */; };
+		4A92C611D46114594CFE4E1B698FBBDF /* FontBlaster-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03BC299653A977240473BC1C5279BCE2 /* FontBlaster-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DBD6F54078644219E8994C26E183544 /* UIColorInputError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AD886B9730E06177D42B2FE5264AD1 /* UIColorInputError.swift */; };
+		4F68FA6CB571418A12EA2DC12A92FFDB /* MGTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4303D767F547ED544261ACCBAB7CB3F0 /* MGTemplate.swift */; };
+		545CC1566FB1B1FB4A0EF2C90E4AEC7E /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82EB4CCD0ADBCC71975D47E195DE4661 /* MaterialIcons.ttf */; };
+		546C34CBA59B7087909B969D327A5F79 /* FontBlaster-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 124DCB012F52DA1049DA06B3F06AF41A /* FontBlaster-dummy.m */; };
+		55D171E48CDDFE24F8AC0D9EFCC5EE3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957F2A4939714A67E9711A00A21A839B /* Foundation.framework */; };
+		57551CC1B893D822BBFD280C6D79AFE8 /* FontBlaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7610F6F60A5BB570586076973816158A /* FontBlaster.swift */; };
+		5798401451198C15621A2212C3928C5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957F2A4939714A67E9711A00A21A839B /* Foundation.framework */; };
+		5923A1AA239509B54CAD76A4F7A536DD /* MGTemplateKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 308C4C11276E36EE489201AFF31B0ED0 /* MGTemplateKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ACF0A74C63F97D8FAEEFDE61E6738AB /* open-iconic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4B7A4019BF5370213E85A50A8FFD6CB /* open-iconic.ttf */; };
+		5DBB95AF0B25FC5276A0EFE8B3CC40E5 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99C21A7946220E86B2CBA2B49C938DFA /* Roboto-Thin.ttf */; };
+		6136E5B0762DC7E12AC5163718B5D089 /* UIGestureRecognizer+New.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F66D053896392F50FEA741722C5AE5E /* UIGestureRecognizer+New.swift */; };
+		64895C07A4CF4C98B0CAEA46909327DB /* Data+New.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAAD61B040F663CA81A5E4B08266119 /* Data+New.swift */; };
+		6BCF679BBC81BA705C927AE2AA286AAC /* Ionicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA83C27D54A1DBF96FB73E18D833A590 /* Ionicons.swift */; };
+		837AEB004984CDC8E7D838D4E3C54E0B /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B70F589C1FA22B8976324E3EBBFAB82C /* Roboto-BoldItalic.ttf */; };
+		859358A12526647E649EA5DCEAD8632A /* MaterialDesignIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D63B1E8798B20A6370EAADDD576DD /* MaterialDesignIcons.swift */; };
+		859A84D1064B17D66C5363379507B3F6 /* MGSettingsKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C83C2D5A98BE5667F59748577340007 /* MGSettingsKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		861C39FD9FAF57A3FA78774E90B27B55 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94D586AAFDB75AE41D0F0A5A98F50040 /* Roboto-Medium.ttf */; };
+		89AA77FBFB816A98168E3EE6A00C2735 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2EB7128888DD1AF8481C41AD968F9AE /* Roboto-BlackItalic.ttf */; };
+		91612775251F73828CE250540BBD86C9 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1AE0131797A40FB47596886107B6FC4 /* Roboto-Light.ttf */; };
+		95A2A71DAF9D779CC5BB1D7C6F4D3E1A /* MGSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967011F5692B4EA30674EA4DCDBB0D44 /* MGSettings.storyboard */; };
+		97A1EF68C43B72B996066B790DEBEF3B /* Pods-MGSettingsKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EAA8D2F4C94E5DDDBFB42BC7361A46 /* Pods-MGSettingsKit_Example-dummy.m */; };
+		A0B295BECDF5751643BE6F53109A5CDC /* DateFormatter+New.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463A72177BE58BD24B7F1DAC45593D7E /* DateFormatter+New.swift */; };
+		ACDDC2994DEB1C9F6ADFE77D17300996 /* MGSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B1FEBB896541E2933971D16F8E062C /* MGSettingsController.swift */; };
+		AD0660297240B671E98ACDFC3F77D344 /* FontAwesomeRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD944C73A14FE1D96046CE6E24465C66 /* FontAwesomeRegular.ttf */; };
+		C3EDA9F2F9A0EF02F28A67182AA2FF34 /* VaadinIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADC6343024AE6AD70F9A16CED30E72F /* VaadinIcons.swift */; };
+		C43513156A4CDC14EB4C490661EC6243 /* UIControl+New.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7C6766B96C7F65ABF9BB9F7BB51189 /* UIControl+New.swift */; };
+		C4D852FACDAD98DB0CEBD18FF7C65192 /* MGSettingsKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0564217C43F39FA6F2EB7BA92324A53 /* MGSettingsKit-dummy.m */; };
+		C73D7B77B1BEFD3A209F607962A6BDE3 /* FontAwesomeSolid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A7758A28E0F49BB45B048D69D2A7C52 /* FontAwesomeSolid.ttf */; };
+		C79EC5F53D857B8921536CB06F7D0F8F /* UIImage+New.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC2FE9015DF6F87540229F17751C042 /* UIImage+New.swift */; };
+		D1BE4A49C59D807E31316A40D8C91227 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2676A8679CB7D94B4F500D7F69873AF6 /* Roboto-Bold.ttf */; };
+		DB8084DCD8F73CB664215C8613EB6043 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788ECE91DC61587D148120DDCA29358 /* StringExtension.swift */; };
+		E05AFB58ADD8E51692711535BF04FF27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957F2A4939714A67E9711A00A21A839B /* Foundation.framework */; };
+		E29D0791C6C619A867B1D6B268956BCB /* FontLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3428D8225C8BF25E38A0FE289AC74347 /* FontLoader.swift */; };
+		E677DEEC767FC3C99168559AA6B029BE /* UIColor_Hex_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0025270071E1FD4672D587971D1CD87 /* UIColor_Hex_Swift-dummy.m */; };
+		E9845C7CC91980DBF539CFB200ABBA20 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE51279B9CFC88DA4D1652530FC828 /* FontAwesome.swift */; };
+		EAFE924B97CC20278BFE2E75E246BCE8 /* MGAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCA52F413EE4D882B7C8EC86D0B84FB /* MGAsset.swift */; };
+		EB1D4EE1A0ED58ADD9A12CDFF20F94AF /* String+New.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAD93A6862F5963A2CC52CD9066226E /* String+New.swift */; };
+		F1E3C1D19B5735B39CA228F5F0F54C80 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6F5A2A5958F71FEC610DA74581A6ED8 /* FontAwesome.ttf */; };
+		F2FAE43C171D20CF84574119B83D4A8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F19325EECFB4AE7977D4EE9B6CEFD2F /* UIKit.framework */; };
+		FF73B24DAB0C1A85E5635469C19FB68E /* MGTemplateKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E040A256C7778369DBAA43991C7BA5 /* MGTemplateKit-dummy.m */; };
+		FF932F0A8539D87357F1082C7D008CFE /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28CDAEF1D73CD5966DECFE84424A2114 /* Roboto-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		37455DE9BEFEC44C9CD69AE5211B6268 /* PBXContainerItemProxy */ = {
+		01AE252E438F69A4247FCD28612CE957 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8F1139AB32FF680AE215FA36C9DB1137;
+			remoteGlobalIDString = 1850410C11F4DA18F2C2FFE6DD98AEE9;
 			remoteInfo = MGSettingsKit;
 		};
-		9EEAB42FA0C90EAF9807A2C724F6E425 /* PBXContainerItemProxy */ = {
+		0FB0E5EEFF10F63B0689585053638D66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BC124B06492195BE5297DC629935F85B;
+			remoteGlobalIDString = B51378EA2A48EAE8DA28704A1BAF3F9A;
+			remoteInfo = "MGTemplateKit-MGTemplateKit";
+		};
+		338281FBB81F78EE9E26AE847AB1B67B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FA35690ED07C4898525CDCDE4284645;
+			remoteInfo = FontBlaster;
+		};
+		92E998639625A8BD91D3B31F83CFAFD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A033743049543D9486AB749432398B01;
+			remoteInfo = UIColor_Hex_Swift;
+		};
+		CECEE688B6189477494668058FFF8D7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A033743049543D9486AB749432398B01;
+			remoteInfo = UIColor_Hex_Swift;
+		};
+		D58486DEAA96474846BC3E321ECEF623 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 387D2A2A70A5866678C955080D3D118F;
+			remoteInfo = MGTemplateKit;
+		};
+		D99456B1BC399752A0A94EA752A68DE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAC5CA8648E13CC55418CD38508AA08D;
 			remoteInfo = "MGSettingsKit-MGSettingsKit";
+		};
+		E597CB5AB5D9979FD8A6404C53E1EF90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FA35690ED07C4898525CDCDE4284645;
+			remoteInfo = FontBlaster;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		035E64CED46D841EB2ECA0EDB1795FFF /* MGSettingsKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MGSettingsKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		08306B2DA91ED8E6874CD960A1CC73E6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		16F4662E6FF3DBEA74611F8E2FC0D137 /* MGSettingsKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGSettingsKit-umbrella.h"; sourceTree = "<group>"; };
-		1D69F7674194CE3663564C54B6F23A2A /* ResourceBundle-MGSettingsKit-MGSettingsKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MGSettingsKit-MGSettingsKit-Info.plist"; sourceTree = "<group>"; };
+		03BC299653A977240473BC1C5279BCE2 /* FontBlaster-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontBlaster-umbrella.h"; sourceTree = "<group>"; };
+		04AE51279B9CFC88DA4D1652530FC828 /* FontAwesome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = MGTemplateKit/Classes/FontIcon/FontAwesome.swift; sourceTree = "<group>"; };
+		09B3D8A66A1BF5311E7E27F383E960ED /* UIColor_Hex_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIColor_Hex_Swift.xcconfig; sourceTree = "<group>"; };
+		0A7758A28E0F49BB45B048D69D2A7C52 /* FontAwesomeSolid.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = FontAwesomeSolid.ttf; path = MGTemplateKit/Assets/FontAwesomeSolid.ttf; sourceTree = "<group>"; };
+		1089A116F007F66776FDC72EDAC55B56 /* FontBlaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontBlaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		124DCB012F52DA1049DA06B3F06AF41A /* FontBlaster-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontBlaster-dummy.m"; sourceTree = "<group>"; };
+		1262A2F879AA4B6E07B7A12EB2047270 /* MGTemplateKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGTemplateKit-prefix.pch"; sourceTree = "<group>"; };
+		14DF59256F66F3B83078999ADC27DDB6 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Italic.ttf"; path = "MGTemplateKit/Assets/Roboto/Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		1B7C890330AB4FF845A2465C13F94A46 /* UIColor_Hex_Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UIColor_Hex_Swift-Info.plist"; sourceTree = "<group>"; };
+		1CF25EE6978465725B35B94449EBDE3C /* FontAwesomeBrands.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = FontAwesomeBrands.ttf; path = MGTemplateKit/Assets/FontAwesomeBrands.ttf; sourceTree = "<group>"; };
+		1F4FEBCA0BA97B2776EEB652EC093CD4 /* MGSettingsKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MGSettingsKit.modulemap; sourceTree = "<group>"; };
+		1F66D053896392F50FEA741722C5AE5E /* UIGestureRecognizer+New.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIGestureRecognizer+New.swift"; path = "MGTemplateKit/Classes/Extensions/UIGestureRecognizer+New.swift"; sourceTree = "<group>"; };
 		21B08DA8200670B4F8A47124155FD609 /* Pods-MGSettingsKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MGSettingsKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		32B1FCE4E14125A3F0F0CC521EBB619E /* MGSettingsKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MGSettingsKit.xcconfig; sourceTree = "<group>"; };
+		237790C7FD4D8A293085CCF516D86D09 /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B1FEBB896541E2933971D16F8E062C /* MGSettingsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MGSettingsController.swift; path = MGSettingsKit/Classes/MGSettingsController.swift; sourceTree = "<group>"; };
+		2676A8679CB7D94B4F500D7F69873AF6 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "MGTemplateKit/Assets/Roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		28CDAEF1D73CD5966DECFE84424A2114 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "MGTemplateKit/Assets/Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		2ADC6343024AE6AD70F9A16CED30E72F /* VaadinIcons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VaadinIcons.swift; path = MGTemplateKit/Classes/FontIcon/VaadinIcons.swift; sourceTree = "<group>"; };
+		2F19325EECFB4AE7977D4EE9B6CEFD2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		308C4C11276E36EE489201AFF31B0ED0 /* MGTemplateKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGTemplateKit-umbrella.h"; sourceTree = "<group>"; };
+		311F02B25E0D5DBBEA4D73BE0953F90A /* UIColor_Hex_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-prefix.pch"; sourceTree = "<group>"; };
 		33EAA8D2F4C94E5DDDBFB42BC7361A46 /* Pods-MGSettingsKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MGSettingsKit_Example-dummy.m"; sourceTree = "<group>"; };
-		4FF436C9F8FB0935A9C49BBFF8073E2C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		60F1BB5F06EECC49369A7F5244FA7DE7 /* MGSettingsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MGSettingsKit.framework; path = MGSettingsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		62967E2EE11AD4601AE76C60D059E3B9 /* MGSettingsKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MGSettingsKit-dummy.m"; sourceTree = "<group>"; };
-		6D8F4F896C20D4446D6C07314D5FE379 /* MGSettings.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = MGSettings.storyboard; path = MGSettingsKit/Assets/MGSettings.storyboard; sourceTree = "<group>"; };
+		3428D8225C8BF25E38A0FE289AC74347 /* FontLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontLoader.swift; path = MGTemplateKit/Classes/FontIcon/FontLoader.swift; sourceTree = "<group>"; };
+		39396C8415941F2FC98A3CEABB20F6C8 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-ThinItalic.ttf"; path = "MGTemplateKit/Assets/Roboto/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		4303D767F547ED544261ACCBAB7CB3F0 /* MGTemplate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MGTemplate.swift; path = MGTemplateKit/Classes/MGTemplate.swift; sourceTree = "<group>"; };
+		440E2F5A4B9FE6D045AF5046C191FCB8 /* Ionicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = Ionicons.ttf; path = MGTemplateKit/Assets/Ionicons.ttf; sourceTree = "<group>"; };
+		45A8253F20CC5B1B17C5952F3DCDC262 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-MediumItalic.ttf"; path = "MGTemplateKit/Assets/Roboto/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		45AC864C24F92962F43A95711064556F /* HEXColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HEXColor.h; path = HEXColor/HEXColor.h; sourceTree = "<group>"; };
+		463A72177BE58BD24B7F1DAC45593D7E /* DateFormatter+New.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateFormatter+New.swift"; path = "MGTemplateKit/Classes/Extensions/DateFormatter+New.swift"; sourceTree = "<group>"; };
+		5761FB6F532EC06E4A3DC2F69188834C /* MGTemplateKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MGTemplateKit.xcconfig; sourceTree = "<group>"; };
+		59F8F46D56ABA4906C12D1152F952B59 /* Pods_MGSettingsKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MGSettingsKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C83C2D5A98BE5667F59748577340007 /* MGSettingsKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGSettingsKit-umbrella.h"; sourceTree = "<group>"; };
+		6DAAD61B040F663CA81A5E4B08266119 /* Data+New.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+New.swift"; path = "MGTemplateKit/Classes/Extensions/Data+New.swift"; sourceTree = "<group>"; };
 		70F91834B63C0762B06B431F7A9B22BB /* Pods-MGSettingsKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MGSettingsKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		71AD886B9730E06177D42B2FE5264AD1 /* UIColorInputError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorInputError.swift; path = HEXColor/UIColorInputError.swift; sourceTree = "<group>"; };
+		72F0B9462CA19A8D08ABEF79D2EC7C9F /* FontBlaster.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontBlaster.xcconfig; sourceTree = "<group>"; };
+		7418E02DFA09E2DD2DFF5327BF7C0F91 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-LightItalic.ttf"; path = "MGTemplateKit/Assets/Roboto/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		7506D9EEDDB54D64364B84AC671D133B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		7610F6F60A5BB570586076973816158A /* FontBlaster.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontBlaster.swift; path = Sources/FontBlaster.swift; sourceTree = "<group>"; };
+		7E8B2B1D1259F8E83FA2814A04108824 /* FontBlaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontBlaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA575C92464F187D0E9D865E3622FBF /* Pods-MGSettingsKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MGSettingsKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		83C76EDB99740593D3F17D61E128655E /* MGSettingsKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGSettingsKit-prefix.pch"; sourceTree = "<group>"; };
+		82EB4CCD0ADBCC71975D47E195DE4661 /* MaterialIcons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = MaterialIcons.ttf; path = MGTemplateKit/Assets/MaterialIcons.ttf; sourceTree = "<group>"; };
 		85AF708E4395FDE0D3D0431D2B46A2CF /* Pods-MGSettingsKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MGSettingsKit_Example.modulemap"; sourceTree = "<group>"; };
+		8C615B5129E69D26FB8C2C7CD2C31B96 /* ResourceBundle-MGTemplateKit-MGTemplateKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MGTemplateKit-MGTemplateKit-Info.plist"; sourceTree = "<group>"; };
+		8CCA52F413EE4D882B7C8EC86D0B84FB /* MGAsset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MGAsset.swift; path = MGTemplateKit/Classes/MGAsset.swift; sourceTree = "<group>"; };
+		8D9D63B1E8798B20A6370EAADDD576DD /* MaterialDesignIcons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaterialDesignIcons.swift; path = MGTemplateKit/Classes/FontIcon/MaterialDesignIcons.swift; sourceTree = "<group>"; };
+		8FF270E0ED21B3D653EA736020DD6710 /* MGSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MGSettings.swift; path = MGSettingsKit/Classes/MGSettings.swift; sourceTree = "<group>"; };
 		9068A534351233766D129FA89933AEB4 /* Pods-MGSettingsKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MGSettingsKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		932D7C944FBBF759CE2539978AF6BAFA /* Pods_MGSettingsKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MGSettingsKit_Example.framework; path = "Pods-MGSettingsKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		93496724BB4DE78F019172513F07874C /* MGSettingsKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MGSettingsKit.modulemap; sourceTree = "<group>"; };
-		9844D8D1534B84B9EF6F17AFD85E7EF9 /* MGSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MGSettings.swift; path = MGSettingsKit/Classes/MGSettings.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94D586AAFDB75AE41D0F0A5A98F50040 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "MGTemplateKit/Assets/Roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		957F2A4939714A67E9711A00A21A839B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		967011F5692B4EA30674EA4DCDBB0D44 /* MGSettings.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = MGSettings.storyboard; path = MGSettingsKit/Assets/MGSettings.storyboard; sourceTree = "<group>"; };
+		98DAEE09B67F9B4CB06DD343B58819BC /* FontBlaster-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FontBlaster-Info.plist"; sourceTree = "<group>"; };
+		99C21A7946220E86B2CBA2B49C938DFA /* Roboto-Thin.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Thin.ttf"; path = "MGTemplateKit/Assets/Roboto/Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		9AB5FDB3150FAA4A17A7D7AD9D073F1B /* MGSettingsKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGSettingsKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DC5860E1FD4979A9FA7341E9261E8BC /* Pods-MGSettingsKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MGSettingsKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9F0F3C7874B85ACDC9EB5111582F0662 /* MGSettingsKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGSettingsKit-prefix.pch"; sourceTree = "<group>"; };
+		A017DAB39B1E82636B90545DDB75243D /* MGSettingsKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MGSettingsKit.xcconfig; sourceTree = "<group>"; };
+		A4B7A4019BF5370213E85A50A8FFD6CB /* open-iconic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "open-iconic.ttf"; path = "MGTemplateKit/Assets/open-iconic.ttf"; sourceTree = "<group>"; };
+		A6F5A2A5958F71FEC610DA74581A6ED8 /* FontAwesome.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = FontAwesome.ttf; path = MGTemplateKit/Assets/FontAwesome.ttf; sourceTree = "<group>"; };
+		A78987157336EA13CD2762F4D6BE1DE8 /* MGSettingsKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MGSettingsKit-Info.plist"; sourceTree = "<group>"; };
+		A911A98EAACD5ADAC3DDB40B00365E6C /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9C4C991A5DF2CBD6801AB45C7984A20 /* MGTemplateKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MGTemplateKit-Info.plist"; sourceTree = "<group>"; };
+		AAB5A0FAD36341D34E2A69A70DD56433 /* ResourceBundle-MGSettingsKit-MGSettingsKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MGSettingsKit-MGSettingsKit-Info.plist"; sourceTree = "<group>"; };
 		AE24BE995A66603F30B39ECFBB4FC248 /* Pods-MGSettingsKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MGSettingsKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B70F589C1FA22B8976324E3EBBFAB82C /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-BoldItalic.ttf"; path = "MGTemplateKit/Assets/Roboto/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		B788ECE91DC61587D148120DDCA29358 /* StringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = HEXColor/StringExtension.swift; sourceTree = "<group>"; };
+		B7ABC1453CCD5C6567604B83951B06FD /* MGFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MGFont.swift; path = MGTemplateKit/Classes/MGFont.swift; sourceTree = "<group>"; };
 		BD6E0628572FBCC28A0F663DA058518D /* Pods-MGSettingsKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MGSettingsKit_Example-Info.plist"; sourceTree = "<group>"; };
-		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		F15C6A9D72B9E42EEA589FFA12AA63F8 /* MGSettingsKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MGSettingsKit.bundle; path = "MGSettingsKit-MGSettingsKit.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCD88559A99829D405E0FACEAC344337 /* MGSettingsKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MGSettingsKit-Info.plist"; sourceTree = "<group>"; };
+		BDAD93A6862F5963A2CC52CD9066226E /* String+New.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+New.swift"; path = "MGTemplateKit/Classes/Extensions/String+New.swift"; sourceTree = "<group>"; };
+		C0025270071E1FD4672D587971D1CD87 /* UIColor_Hex_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor_Hex_Swift-dummy.m"; sourceTree = "<group>"; };
+		C1AE0131797A40FB47596886107B6FC4 /* Roboto-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "MGTemplateKit/Assets/Roboto/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		C3263B4055735CEB651DDEA508E14C29 /* MGTemplateKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGTemplateKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C51A7518D46E86F609533235ADE65833 /* Roboto-Black.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Black.ttf"; path = "MGTemplateKit/Assets/Roboto/Roboto-Black.ttf"; sourceTree = "<group>"; };
+		C7B7F8D9AABBC9496AC17F1EA30A4335 /* MGTemplateKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MGTemplateKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E7BD576A3A7E0EB8F7739A4DCC2A43 /* MGSettingsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MGSettingsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA83C27D54A1DBF96FB73E18D833A590 /* Ionicons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ionicons.swift; path = MGTemplateKit/Classes/FontIcon/Ionicons.swift; sourceTree = "<group>"; };
+		CD944C73A14FE1D96046CE6E24465C66 /* FontAwesomeRegular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = FontAwesomeRegular.ttf; path = MGTemplateKit/Assets/FontAwesomeRegular.ttf; sourceTree = "<group>"; };
+		D0564217C43F39FA6F2EB7BA92324A53 /* MGSettingsKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MGSettingsKit-dummy.m"; sourceTree = "<group>"; };
+		D075A23C062B8DB3EBDF7EC7368F2B9A /* FontBlaster.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FontBlaster.modulemap; sourceTree = "<group>"; };
+		D2EB7128888DD1AF8481C41AD968F9AE /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-BlackItalic.ttf"; path = "MGTemplateKit/Assets/Roboto/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		D766AD978FE7B9482C5E018719C41C71 /* UIColor_Hex_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UIColor_Hex_Swift.modulemap; sourceTree = "<group>"; };
+		D8D8B73C34967491C8290597A6F2016D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DE11E21AE57DF5AE9BCDC8D1EB4930AB /* SwiftIcons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftIcons.swift; path = MGTemplateKit/Classes/FontIcon/SwiftIcons.swift; sourceTree = "<group>"; };
+		DF7C6766B96C7F65ABF9BB9F7BB51189 /* UIControl+New.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIControl+New.swift"; path = "MGTemplateKit/Classes/Extensions/UIControl+New.swift"; sourceTree = "<group>"; };
+		E0CD32C42EFA4E059DE8CACD2218DF40 /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = HEXColor/UIColorExtension.swift; sourceTree = "<group>"; };
+		E4E040A256C7778369DBAA43991C7BA5 /* MGTemplateKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MGTemplateKit-dummy.m"; sourceTree = "<group>"; };
+		E7B008EA9518EB041B8BB00019243331 /* UIColor_Hex_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-umbrella.h"; sourceTree = "<group>"; };
+		EBC2FE9015DF6F87540229F17751C042 /* UIImage+New.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+New.swift"; path = "MGTemplateKit/Classes/Extensions/UIImage+New.swift"; sourceTree = "<group>"; };
+		EC855F3E31DA1F762358B4D0695F2873 /* MGTemplateKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MGTemplateKit.modulemap; sourceTree = "<group>"; };
+		EDEB995CF7BDFF7E11E66230176478B2 /* MGSettingsKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MGSettingsKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FE34D2244E5D8A9BBD1A4EED41A57913 /* FontBlaster-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontBlaster-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		55442316DE180972D223C3E0F0A4EE2B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4F87F89F1EEA38B4E56C3805B4683D5B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D913D32419FFC8A9D019607ED3B3F306 /* Frameworks */ = {
+		0440EFE13AFDA4CFD3FA77B78743E8D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E18DE836772280137E3D326A56FE0F49 /* Frameworks */ = {
+		0C9088F695636F54F28123A339F231B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D7C5492C373BD56D2480EF6C497A673 /* Foundation.framework in Frameworks */,
+				5798401451198C15621A2212C3928C5C /* Foundation.framework in Frameworks */,
+				F2FAE43C171D20CF84574119B83D4A8E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5671DAB1D3D0ADE0FA891FD0409A679C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB399C940F1D16B73B4030832322BAF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCAEF127B8666CE0FE43C4233973DA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48E1D070FCDA1CB1B8E7AF09C5D0D940 /* FontBlaster.framework in Frameworks */,
+				400E34179513909471806AC11D089D62 /* Foundation.framework in Frameworks */,
+				43DA1E70248D4CB09305C0D26E1B93BD /* UIColor_Hex_Swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91EF8F32E4C89E1D43EAF6573DBF65D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55D171E48CDDFE24F8AC0D9EFCC5EE3A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B043DF8B80B451A27FA9226E157C0010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFE3656A227FD0E224C444182EE8A81B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E05AFB58ADD8E51692711535BF04FF27 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2DF9B32056010C05FF6CE645D8088AC7 /* Products */ = {
+		0A887743658B81911F64D46A8A5A2FBB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F15C6A9D72B9E42EEA589FFA12AA63F8 /* MGSettingsKit.bundle */,
-				60F1BB5F06EECC49369A7F5244FA7DE7 /* MGSettingsKit.framework */,
-				932D7C944FBBF759CE2539978AF6BAFA /* Pods_MGSettingsKit_Example.framework */,
+				0E98319A6B15157A8AEC6E268AE39BD7 /* FontBlaster */,
+				79758052761B1C0092CDE86C74AB517F /* MGTemplateKit */,
+				3DFEF65550A22910281C0238D7BE2BB6 /* UIColor_Hex_Swift */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		30384913A2FDEDD17959ACE8363E6BBA /* Support Files */ = {
+		0E98319A6B15157A8AEC6E268AE39BD7 /* FontBlaster */ = {
 			isa = PBXGroup;
 			children = (
-				93496724BB4DE78F019172513F07874C /* MGSettingsKit.modulemap */,
-				32B1FCE4E14125A3F0F0CC521EBB619E /* MGSettingsKit.xcconfig */,
-				62967E2EE11AD4601AE76C60D059E3B9 /* MGSettingsKit-dummy.m */,
-				FCD88559A99829D405E0FACEAC344337 /* MGSettingsKit-Info.plist */,
-				83C76EDB99740593D3F17D61E128655E /* MGSettingsKit-prefix.pch */,
-				16F4662E6FF3DBEA74611F8E2FC0D137 /* MGSettingsKit-umbrella.h */,
-				1D69F7674194CE3663564C54B6F23A2A /* ResourceBundle-MGSettingsKit-MGSettingsKit-Info.plist */,
+				7610F6F60A5BB570586076973816158A /* FontBlaster.swift */,
+				82F5826D843A6973A6FFE0B8DB39DDC3 /* Support Files */,
+			);
+			path = FontBlaster;
+			sourceTree = "<group>";
+		};
+		3A940B860FF788D490E29F7DE74BCFE9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7506D9EEDDB54D64364B84AC671D133B /* LICENSE */,
+				EDEB995CF7BDFF7E11E66230176478B2 /* MGSettingsKit.podspec */,
+				D8D8B73C34967491C8290597A6F2016D /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		3C414586BD25F29585177DC288601B70 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D766AD978FE7B9482C5E018719C41C71 /* UIColor_Hex_Swift.modulemap */,
+				09B3D8A66A1BF5311E7E27F383E960ED /* UIColor_Hex_Swift.xcconfig */,
+				C0025270071E1FD4672D587971D1CD87 /* UIColor_Hex_Swift-dummy.m */,
+				1B7C890330AB4FF845A2465C13F94A46 /* UIColor_Hex_Swift-Info.plist */,
+				311F02B25E0D5DBBEA4D73BE0953F90A /* UIColor_Hex_Swift-prefix.pch */,
+				E7B008EA9518EB041B8BB00019243331 /* UIColor_Hex_Swift-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MGSettingsKit";
+			path = "../Target Support Files/UIColor_Hex_Swift";
 			sourceTree = "<group>";
 		};
-		7BCABF82EA9362B25E328FD4E0C0AB20 /* MGSettingsKit */ = {
+		3DFEF65550A22910281C0238D7BE2BB6 /* UIColor_Hex_Swift */ = {
 			isa = PBXGroup;
 			children = (
-				9844D8D1534B84B9EF6F17AFD85E7EF9 /* MGSettings.swift */,
-				802C5C31A7BBDB9745E7332C3DD099AA /* Pod */,
-				A87FAE32C950E5FC954D7BF40BC68965 /* Resources */,
-				30384913A2FDEDD17959ACE8363E6BBA /* Support Files */,
+				45AC864C24F92962F43A95711064556F /* HEXColor.h */,
+				B788ECE91DC61587D148120DDCA29358 /* StringExtension.swift */,
+				E0CD32C42EFA4E059DE8CACD2218DF40 /* UIColorExtension.swift */,
+				71AD886B9730E06177D42B2FE5264AD1 /* UIColorInputError.swift */,
+				3C414586BD25F29585177DC288601B70 /* Support Files */,
+			);
+			path = UIColor_Hex_Swift;
+			sourceTree = "<group>";
+		};
+		4A7A566781A39588F7111D60E5B9DC78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E8B2B1D1259F8E83FA2814A04108824 /* FontBlaster.framework */,
+				A911A98EAACD5ADAC3DDB40B00365E6C /* UIColor_Hex_Swift.framework */,
+				A06EFFE08B661DACE57D83D20C0D5A4F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F48600B013329A4EF497E1FA5F9BB51 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92119A19EC68EE36AE4E5D91F06BBEFF /* MGSettingsKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		79758052761B1C0092CDE86C74AB517F /* MGTemplateKit */ = {
+			isa = PBXGroup;
+			children = (
+				6DAAD61B040F663CA81A5E4B08266119 /* Data+New.swift */,
+				463A72177BE58BD24B7F1DAC45593D7E /* DateFormatter+New.swift */,
+				04AE51279B9CFC88DA4D1652530FC828 /* FontAwesome.swift */,
+				3428D8225C8BF25E38A0FE289AC74347 /* FontLoader.swift */,
+				CA83C27D54A1DBF96FB73E18D833A590 /* Ionicons.swift */,
+				8D9D63B1E8798B20A6370EAADDD576DD /* MaterialDesignIcons.swift */,
+				8CCA52F413EE4D882B7C8EC86D0B84FB /* MGAsset.swift */,
+				B7ABC1453CCD5C6567604B83951B06FD /* MGFont.swift */,
+				4303D767F547ED544261ACCBAB7CB3F0 /* MGTemplate.swift */,
+				BDAD93A6862F5963A2CC52CD9066226E /* String+New.swift */,
+				DE11E21AE57DF5AE9BCDC8D1EB4930AB /* SwiftIcons.swift */,
+				DF7C6766B96C7F65ABF9BB9F7BB51189 /* UIControl+New.swift */,
+				1F66D053896392F50FEA741722C5AE5E /* UIGestureRecognizer+New.swift */,
+				EBC2FE9015DF6F87540229F17751C042 /* UIImage+New.swift */,
+				2ADC6343024AE6AD70F9A16CED30E72F /* VaadinIcons.swift */,
+				891AA6F5E3EB2A4264DBEC9B03C22A1C /* Resources */,
+				FA859D7161E616ED09838FA5F62263C4 /* Support Files */,
+			);
+			path = MGTemplateKit;
+			sourceTree = "<group>";
+		};
+		82F5826D843A6973A6FFE0B8DB39DDC3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D075A23C062B8DB3EBDF7EC7368F2B9A /* FontBlaster.modulemap */,
+				72F0B9462CA19A8D08ABEF79D2EC7C9F /* FontBlaster.xcconfig */,
+				124DCB012F52DA1049DA06B3F06AF41A /* FontBlaster-dummy.m */,
+				98DAEE09B67F9B4CB06DD343B58819BC /* FontBlaster-Info.plist */,
+				FE34D2244E5D8A9BBD1A4EED41A57913 /* FontBlaster-prefix.pch */,
+				03BC299653A977240473BC1C5279BCE2 /* FontBlaster-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FontBlaster";
+			sourceTree = "<group>";
+		};
+		891AA6F5E3EB2A4264DBEC9B03C22A1C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A6F5A2A5958F71FEC610DA74581A6ED8 /* FontAwesome.ttf */,
+				1CF25EE6978465725B35B94449EBDE3C /* FontAwesomeBrands.ttf */,
+				CD944C73A14FE1D96046CE6E24465C66 /* FontAwesomeRegular.ttf */,
+				0A7758A28E0F49BB45B048D69D2A7C52 /* FontAwesomeSolid.ttf */,
+				440E2F5A4B9FE6D045AF5046C191FCB8 /* Ionicons.ttf */,
+				82EB4CCD0ADBCC71975D47E195DE4661 /* MaterialIcons.ttf */,
+				A4B7A4019BF5370213E85A50A8FFD6CB /* open-iconic.ttf */,
+				C51A7518D46E86F609533235ADE65833 /* Roboto-Black.ttf */,
+				D2EB7128888DD1AF8481C41AD968F9AE /* Roboto-BlackItalic.ttf */,
+				2676A8679CB7D94B4F500D7F69873AF6 /* Roboto-Bold.ttf */,
+				B70F589C1FA22B8976324E3EBBFAB82C /* Roboto-BoldItalic.ttf */,
+				14DF59256F66F3B83078999ADC27DDB6 /* Roboto-Italic.ttf */,
+				C1AE0131797A40FB47596886107B6FC4 /* Roboto-Light.ttf */,
+				7418E02DFA09E2DD2DFF5327BF7C0F91 /* Roboto-LightItalic.ttf */,
+				94D586AAFDB75AE41D0F0A5A98F50040 /* Roboto-Medium.ttf */,
+				45A8253F20CC5B1B17C5952F3DCDC262 /* Roboto-MediumItalic.ttf */,
+				28CDAEF1D73CD5966DECFE84424A2114 /* Roboto-Regular.ttf */,
+				99C21A7946220E86B2CBA2B49C938DFA /* Roboto-Thin.ttf */,
+				39396C8415941F2FC98A3CEABB20F6C8 /* Roboto-ThinItalic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		92119A19EC68EE36AE4E5D91F06BBEFF /* MGSettingsKit */ = {
+			isa = PBXGroup;
+			children = (
+				8FF270E0ED21B3D653EA736020DD6710 /* MGSettings.swift */,
+				23B1FEBB896541E2933971D16F8E062C /* MGSettingsController.swift */,
+				3A940B860FF788D490E29F7DE74BCFE9 /* Pod */,
+				C43984414339DBADFEDBE49B756F9AAF /* Resources */,
+				B90B5C0DB21F1EADAB0BD2D2F75ABEF2 /* Support Files */,
 			);
 			name = MGSettingsKit;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		802C5C31A7BBDB9745E7332C3DD099AA /* Pod */ = {
+		A06EFFE08B661DACE57D83D20C0D5A4F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				08306B2DA91ED8E6874CD960A1CC73E6 /* LICENSE */,
-				035E64CED46D841EB2ECA0EDB1795FFF /* MGSettingsKit.podspec */,
-				4FF436C9F8FB0935A9C49BBFF8073E2C /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+				957F2A4939714A67E9711A00A21A839B /* Foundation.framework */,
+				2F19325EECFB4AE7977D4EE9B6CEFD2F /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		A87FAE32C950E5FC954D7BF40BC68965 /* Resources */ = {
+		B90B5C0DB21F1EADAB0BD2D2F75ABEF2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6D8F4F896C20D4446D6C07314D5FE379 /* MGSettings.storyboard */,
+				1F4FEBCA0BA97B2776EEB652EC093CD4 /* MGSettingsKit.modulemap */,
+				A017DAB39B1E82636B90545DDB75243D /* MGSettingsKit.xcconfig */,
+				D0564217C43F39FA6F2EB7BA92324A53 /* MGSettingsKit-dummy.m */,
+				A78987157336EA13CD2762F4D6BE1DE8 /* MGSettingsKit-Info.plist */,
+				9F0F3C7874B85ACDC9EB5111582F0662 /* MGSettingsKit-prefix.pch */,
+				5C83C2D5A98BE5667F59748577340007 /* MGSettingsKit-umbrella.h */,
+				AAB5A0FAD36341D34E2A69A70DD56433 /* ResourceBundle-MGSettingsKit-MGSettingsKit-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MGSettingsKit";
+			sourceTree = "<group>";
+		};
+		C43984414339DBADFEDBE49B756F9AAF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				967011F5692B4EA30674EA4DCDBB0D44 /* MGSettings.storyboard */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -166,19 +480,12 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				E6E3D4A6F7D4B43C71085CF734A5ECB4 /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				2DF9B32056010C05FF6CE645D8088AC7 /* Products */,
+				5F48600B013329A4EF497E1FA5F9BB51 /* Development Pods */,
+				4A7A566781A39588F7111D60E5B9DC78 /* Frameworks */,
+				0A887743658B81911F64D46A8A5A2FBB /* Pods */,
+				F4410F54E8609D57FF8B24E71EE796D0 /* Products */,
 				C64938459DF89045C7E69CF68FA55E27 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E0E2325B08A001120987AB208011100F /* Pods-MGSettingsKit_Example */ = {
@@ -198,62 +505,187 @@
 			path = "Target Support Files/Pods-MGSettingsKit_Example";
 			sourceTree = "<group>";
 		};
-		E6E3D4A6F7D4B43C71085CF734A5ECB4 /* Development Pods */ = {
+		F4410F54E8609D57FF8B24E71EE796D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7BCABF82EA9362B25E328FD4E0C0AB20 /* MGSettingsKit */,
+				1089A116F007F66776FDC72EDAC55B56 /* FontBlaster.framework */,
+				9AB5FDB3150FAA4A17A7D7AD9D073F1B /* MGSettingsKit.bundle */,
+				C9E7BD576A3A7E0EB8F7739A4DCC2A43 /* MGSettingsKit.framework */,
+				C3263B4055735CEB651DDEA508E14C29 /* MGTemplateKit.bundle */,
+				C7B7F8D9AABBC9496AC17F1EA30A4335 /* MGTemplateKit.framework */,
+				59F8F46D56ABA4906C12D1152F952B59 /* Pods_MGSettingsKit_Example.framework */,
+				237790C7FD4D8A293085CCF516D86D09 /* UIColor_Hex_Swift.framework */,
 			);
-			name = "Development Pods";
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA859D7161E616ED09838FA5F62263C4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC855F3E31DA1F762358B4D0695F2873 /* MGTemplateKit.modulemap */,
+				5761FB6F532EC06E4A3DC2F69188834C /* MGTemplateKit.xcconfig */,
+				E4E040A256C7778369DBAA43991C7BA5 /* MGTemplateKit-dummy.m */,
+				A9C4C991A5DF2CBD6801AB45C7984A20 /* MGTemplateKit-Info.plist */,
+				1262A2F879AA4B6E07B7A12EB2047270 /* MGTemplateKit-prefix.pch */,
+				308C4C11276E36EE489201AFF31B0ED0 /* MGTemplateKit-umbrella.h */,
+				8C615B5129E69D26FB8C2C7CD2C31B96 /* ResourceBundle-MGTemplateKit-MGTemplateKit-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MGTemplateKit";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C9A88F0F2C617BB1795FFD59718C3732 /* Headers */ = {
+		27CEFCCD107259F27FA3E9B8DA7ACC17 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CF972F80884C62D57C8543BC2BE80CE /* Pods-MGSettingsKit_Example-umbrella.h in Headers */,
+				43003BC6BD1523DCC2BEBD2EA5DA33E9 /* Pods-MGSettingsKit_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D5EDECAD1F5CB5C10D26DE9571134D1E /* Headers */ = {
+		508BF71ED79AE0117082D2C2CC0C980C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61AFA605961302F1CDFC2B2EC9398B0D /* MGSettingsKit-umbrella.h in Headers */,
+				4A92C611D46114594CFE4E1B698FBBDF /* FontBlaster-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91C79AFC9629D2EB8F077DF3500DCDBB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46775B1E27E62CBCBBA58ED9D03B5543 /* HEXColor.h in Headers */,
+				20FD89E8225D91337CCF10DDD91CA569 /* UIColor_Hex_Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9F361866DC4662275EE3A59423DE5F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				859A84D1064B17D66C5363379507B3F6 /* MGSettingsKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD1BB2CD59CF6E36423410CF739517F7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5923A1AA239509B54CAD76A4F7A536DD /* MGTemplateKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8F1139AB32FF680AE215FA36C9DB1137 /* MGSettingsKit */ = {
+		1850410C11F4DA18F2C2FFE6DD98AEE9 /* MGSettingsKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7DDD23B0B817534CBD9E01AB316B2254 /* Build configuration list for PBXNativeTarget "MGSettingsKit" */;
+			buildConfigurationList = 7B0705D2D23C8F6B59A9F7CDC76B4FCE /* Build configuration list for PBXNativeTarget "MGSettingsKit" */;
 			buildPhases = (
-				D5EDECAD1F5CB5C10D26DE9571134D1E /* Headers */,
-				06D3D6594AA31F9BEC55947E94573AA5 /* Sources */,
-				E18DE836772280137E3D326A56FE0F49 /* Frameworks */,
-				37D3025AC398DAD2C1949F09F3B1BBFA /* Resources */,
+				A9F361866DC4662275EE3A59423DE5F3 /* Headers */,
+				8B2C2FA241732BF0BFC670ED36CF9AD4 /* Sources */,
+				91EF8F32E4C89E1D43EAF6573DBF65D1 /* Frameworks */,
+				6E145274CD690B418FEF675238DDEEE0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2078323FED3BB23FD27E5749689CCDA7 /* PBXTargetDependency */,
+				97CD8BD1B1DE00B4B6B59683B80C6162 /* PBXTargetDependency */,
 			);
 			name = MGSettingsKit;
 			productName = MGSettingsKit;
-			productReference = 60F1BB5F06EECC49369A7F5244FA7DE7 /* MGSettingsKit.framework */;
+			productReference = C9E7BD576A3A7E0EB8F7739A4DCC2A43 /* MGSettingsKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BC124B06492195BE5297DC629935F85B /* MGSettingsKit-MGSettingsKit */ = {
+		387D2A2A70A5866678C955080D3D118F /* MGTemplateKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B4D98152DF75F0BC149AE4E0F52D1D96 /* Build configuration list for PBXNativeTarget "MGSettingsKit-MGSettingsKit" */;
+			buildConfigurationList = 6F6AB229F60E81F6EB7C5D0342CE846B /* Build configuration list for PBXNativeTarget "MGTemplateKit" */;
 			buildPhases = (
-				BA55837665A54A1E472F69813E3F11D3 /* Sources */,
-				D913D32419FFC8A9D019607ED3B3F306 /* Frameworks */,
-				95678B14089FEA043813329FF7847716 /* Resources */,
+				DD1BB2CD59CF6E36423410CF739517F7 /* Headers */,
+				201E0296A033E54D20A21BCB4C8085DB /* Sources */,
+				5DCAEF127B8666CE0FE43C4233973DA8 /* Frameworks */,
+				98471E2A0C522F74070007FBDD209C70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AB27AC6A855A8FEF34549396CD25BA4 /* PBXTargetDependency */,
+				DD1223F8A64BD575EC401027B3845E3B /* PBXTargetDependency */,
+				01796BC3F35941660FEE5D11AE062036 /* PBXTargetDependency */,
+			);
+			name = MGTemplateKit;
+			productName = MGTemplateKit;
+			productReference = C7B7F8D9AABBC9496AC17F1EA30A4335 /* MGTemplateKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5E16FBF1022B19D05184C70E09FDC610 /* Pods-MGSettingsKit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81CC2A29BA89BBDCD37F2B0C6E1AEFA7 /* Build configuration list for PBXNativeTarget "Pods-MGSettingsKit_Example" */;
+			buildPhases = (
+				27CEFCCD107259F27FA3E9B8DA7ACC17 /* Headers */,
+				6B2472548B1DBE06ED4E8C1844FA60D8 /* Sources */,
+				5671DAB1D3D0ADE0FA891FD0409A679C /* Frameworks */,
+				BB75CB44483AABB59B234835506AA2CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A6E0C533E9FC6E35FDB3916BEAA9D2F /* PBXTargetDependency */,
+				F7C1FBDFE083F14D4880BFC0F4F90951 /* PBXTargetDependency */,
+				BD6A3FB5401CE71B31B3246A330285D6 /* PBXTargetDependency */,
+				8B48B569037DCA5D32A7F877A572A9E8 /* PBXTargetDependency */,
+			);
+			name = "Pods-MGSettingsKit_Example";
+			productName = "Pods-MGSettingsKit_Example";
+			productReference = 59F8F46D56ABA4906C12D1152F952B59 /* Pods_MGSettingsKit_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6FA35690ED07C4898525CDCDE4284645 /* FontBlaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E374FFD7430B78AE7C36B8D7BC1F07F /* Build configuration list for PBXNativeTarget "FontBlaster" */;
+			buildPhases = (
+				508BF71ED79AE0117082D2C2CC0C980C /* Headers */,
+				C7EB202B2969F425CE1F6AC2F4A24FA5 /* Sources */,
+				CFE3656A227FD0E224C444182EE8A81B /* Frameworks */,
+				DC01A7E88F3F2617DA8BDCECB9E48C11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FontBlaster;
+			productName = FontBlaster;
+			productReference = 1089A116F007F66776FDC72EDAC55B56 /* FontBlaster.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A033743049543D9486AB749432398B01 /* UIColor_Hex_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07D14D6B34D1CF2F815376AC4F26BB65 /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */;
+			buildPhases = (
+				91C79AFC9629D2EB8F077DF3500DCDBB /* Headers */,
+				0AC21E7F4ADA7EF0557C999F26A4749A /* Sources */,
+				0C9088F695636F54F28123A339F231B2 /* Frameworks */,
+				B8A3D85F3E1D21B1F65B8E26C068E053 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIColor_Hex_Swift;
+			productName = UIColor_Hex_Swift;
+			productReference = 237790C7FD4D8A293085CCF516D86D09 /* UIColor_Hex_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AAC5CA8648E13CC55418CD38508AA08D /* MGSettingsKit-MGSettingsKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99291677DB56E743DA2990EBC498C349 /* Build configuration list for PBXNativeTarget "MGSettingsKit-MGSettingsKit" */;
+			buildPhases = (
+				5F96B11ACA43538AA5FFA9D4E1436FC5 /* Sources */,
+				0440EFE13AFDA4CFD3FA77B78743E8D8 /* Frameworks */,
+				7A6F6C774B4B844F10E740B46ED9AD13 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -261,27 +693,25 @@
 			);
 			name = "MGSettingsKit-MGSettingsKit";
 			productName = "MGSettingsKit-MGSettingsKit";
-			productReference = F15C6A9D72B9E42EEA589FFA12AA63F8 /* MGSettingsKit.bundle */;
+			productReference = 9AB5FDB3150FAA4A17A7D7AD9D073F1B /* MGSettingsKit.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		CBBD9368F4715274E1D19AF1263E0EBD /* Pods-MGSettingsKit_Example */ = {
+		B51378EA2A48EAE8DA28704A1BAF3F9A /* MGTemplateKit-MGTemplateKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2653C2063760B21705E67A1B5EBF44DA /* Build configuration list for PBXNativeTarget "Pods-MGSettingsKit_Example" */;
+			buildConfigurationList = 92777947E7E983794887E5A0F0388C21 /* Build configuration list for PBXNativeTarget "MGTemplateKit-MGTemplateKit" */;
 			buildPhases = (
-				C9A88F0F2C617BB1795FFD59718C3732 /* Headers */,
-				6C475593C3E428E70B08E606876BC43A /* Sources */,
-				55442316DE180972D223C3E0F0A4EE2B /* Frameworks */,
-				8B9CA2AEA5936D1280BAC0103883D376 /* Resources */,
+				D165FD022A92AA2BDBC99F07606F539D /* Sources */,
+				B043DF8B80B451A27FA9226E157C0010 /* Frameworks */,
+				CABF6C414F0F3F6C2966A942A0706089 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4F1357D4159B242F2C15A583A13F4A27 /* PBXTargetDependency */,
 			);
-			name = "Pods-MGSettingsKit_Example";
-			productName = "Pods-MGSettingsKit_Example";
-			productReference = 932D7C944FBBF759CE2539978AF6BAFA /* Pods_MGSettingsKit_Example.framework */;
-			productType = "com.apple.product-type.framework";
+			name = "MGTemplateKit-MGTemplateKit";
+			productName = "MGTemplateKit-MGTemplateKit";
+			productReference = C3263B4055735CEB651DDEA508E14C29 /* MGTemplateKit.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -297,65 +727,169 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 2DF9B32056010C05FF6CE645D8088AC7 /* Products */;
+			productRefGroup = F4410F54E8609D57FF8B24E71EE796D0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8F1139AB32FF680AE215FA36C9DB1137 /* MGSettingsKit */,
-				BC124B06492195BE5297DC629935F85B /* MGSettingsKit-MGSettingsKit */,
-				CBBD9368F4715274E1D19AF1263E0EBD /* Pods-MGSettingsKit_Example */,
+				6FA35690ED07C4898525CDCDE4284645 /* FontBlaster */,
+				1850410C11F4DA18F2C2FFE6DD98AEE9 /* MGSettingsKit */,
+				AAC5CA8648E13CC55418CD38508AA08D /* MGSettingsKit-MGSettingsKit */,
+				387D2A2A70A5866678C955080D3D118F /* MGTemplateKit */,
+				B51378EA2A48EAE8DA28704A1BAF3F9A /* MGTemplateKit-MGTemplateKit */,
+				5E16FBF1022B19D05184C70E09FDC610 /* Pods-MGSettingsKit_Example */,
+				A033743049543D9486AB749432398B01 /* UIColor_Hex_Swift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		37D3025AC398DAD2C1949F09F3B1BBFA /* Resources */ = {
+		6E145274CD690B418FEF675238DDEEE0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C43A6AFF3D755A916864AB4CA89E2A9C /* MGSettingsKit.bundle in Resources */,
+				42E15E78A7F6F6DE2544E04EB0CE4F59 /* MGSettingsKit.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B9CA2AEA5936D1280BAC0103883D376 /* Resources */ = {
+		7A6F6C774B4B844F10E740B46ED9AD13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95A2A71DAF9D779CC5BB1D7C6F4D3E1A /* MGSettings.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98471E2A0C522F74070007FBDD209C70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C95EC887A3D6CA0386944BCC732351D /* MGTemplateKit.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A3D85F3E1D21B1F65B8E26C068E053 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		95678B14089FEA043813329FF7847716 /* Resources */ = {
+		BB75CB44483AABB59B234835506AA2CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FF95683664A1370238BBD1821589741 /* MGSettings.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CABF6C414F0F3F6C2966A942A0706089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E3C1D19B5735B39CA228F5F0F54C80 /* FontAwesome.ttf in Resources */,
+				3312FB3B7A18CEAED4EDB92D875089F9 /* FontAwesomeBrands.ttf in Resources */,
+				AD0660297240B671E98ACDFC3F77D344 /* FontAwesomeRegular.ttf in Resources */,
+				C73D7B77B1BEFD3A209F607962A6BDE3 /* FontAwesomeSolid.ttf in Resources */,
+				23E319649B495563EDC3BD2E581F8C98 /* Ionicons.ttf in Resources */,
+				545CC1566FB1B1FB4A0EF2C90E4AEC7E /* MaterialIcons.ttf in Resources */,
+				5ACF0A74C63F97D8FAEEFDE61E6738AB /* open-iconic.ttf in Resources */,
+				4603C7B243497B95B03551A3309966FC /* Roboto-Black.ttf in Resources */,
+				89AA77FBFB816A98168E3EE6A00C2735 /* Roboto-BlackItalic.ttf in Resources */,
+				D1BE4A49C59D807E31316A40D8C91227 /* Roboto-Bold.ttf in Resources */,
+				837AEB004984CDC8E7D838D4E3C54E0B /* Roboto-BoldItalic.ttf in Resources */,
+				3D62C0C23D1C156788457B2557370C6D /* Roboto-Italic.ttf in Resources */,
+				91612775251F73828CE250540BBD86C9 /* Roboto-Light.ttf in Resources */,
+				1DB638079D70E05211323033C260A496 /* Roboto-LightItalic.ttf in Resources */,
+				861C39FD9FAF57A3FA78774E90B27B55 /* Roboto-Medium.ttf in Resources */,
+				436F5CDA17A17A303ABB27A385D8F315 /* Roboto-MediumItalic.ttf in Resources */,
+				FF932F0A8539D87357F1082C7D008CFE /* Roboto-Regular.ttf in Resources */,
+				5DBB95AF0B25FC5276A0EFE8B3CC40E5 /* Roboto-Thin.ttf in Resources */,
+				1C5A30702C5191F12E13FE5D1737D616 /* Roboto-ThinItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC01A7E88F3F2617DA8BDCECB9E48C11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		06D3D6594AA31F9BEC55947E94573AA5 /* Sources */ = {
+		0AC21E7F4ADA7EF0557C999F26A4749A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C33C6CE06AF930A909E8C5918CF01863 /* MGSettings.swift in Sources */,
-				312906C571292D11DBB0EF758B98B55C /* MGSettingsKit-dummy.m in Sources */,
+				DB8084DCD8F73CB664215C8613EB6043 /* StringExtension.swift in Sources */,
+				E677DEEC767FC3C99168559AA6B029BE /* UIColor_Hex_Swift-dummy.m in Sources */,
+				3872CCEFC766B79B778084AFE7B88309 /* UIColorExtension.swift in Sources */,
+				4DBD6F54078644219E8994C26E183544 /* UIColorInputError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6C475593C3E428E70B08E606876BC43A /* Sources */ = {
+		201E0296A033E54D20A21BCB4C8085DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				745613D8548E7DA1673F9D442014293D /* Pods-MGSettingsKit_Example-dummy.m in Sources */,
+				64895C07A4CF4C98B0CAEA46909327DB /* Data+New.swift in Sources */,
+				A0B295BECDF5751643BE6F53109A5CDC /* DateFormatter+New.swift in Sources */,
+				E9845C7CC91980DBF539CFB200ABBA20 /* FontAwesome.swift in Sources */,
+				E29D0791C6C619A867B1D6B268956BCB /* FontLoader.swift in Sources */,
+				6BCF679BBC81BA705C927AE2AA286AAC /* Ionicons.swift in Sources */,
+				859358A12526647E649EA5DCEAD8632A /* MaterialDesignIcons.swift in Sources */,
+				EAFE924B97CC20278BFE2E75E246BCE8 /* MGAsset.swift in Sources */,
+				01055A8BE96E25F51E0DC6255A7CA5F1 /* MGFont.swift in Sources */,
+				4F68FA6CB571418A12EA2DC12A92FFDB /* MGTemplate.swift in Sources */,
+				FF73B24DAB0C1A85E5635469C19FB68E /* MGTemplateKit-dummy.m in Sources */,
+				EB1D4EE1A0ED58ADD9A12CDFF20F94AF /* String+New.swift in Sources */,
+				09974E61524C87A1453B4C55D8BE8D41 /* SwiftIcons.swift in Sources */,
+				C43513156A4CDC14EB4C490661EC6243 /* UIControl+New.swift in Sources */,
+				6136E5B0762DC7E12AC5163718B5D089 /* UIGestureRecognizer+New.swift in Sources */,
+				C79EC5F53D857B8921536CB06F7D0F8F /* UIImage+New.swift in Sources */,
+				C3EDA9F2F9A0EF02F28A67182AA2FF34 /* VaadinIcons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA55837665A54A1E472F69813E3F11D3 /* Sources */ = {
+		5F96B11ACA43538AA5FFA9D4E1436FC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B2472548B1DBE06ED4E8C1844FA60D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A1EF68C43B72B996066B790DEBEF3B /* Pods-MGSettingsKit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B2C2FA241732BF0BFC670ED36CF9AD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08176FE0DEB7021A8A8A95BDB1D0EBF1 /* MGSettings.swift in Sources */,
+				ACDDC2994DEB1C9F6ADFE77D17300996 /* MGSettingsController.swift in Sources */,
+				C4D852FACDAD98DB0CEBD18FF7C65192 /* MGSettingsKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7EB202B2969F425CE1F6AC2F4A24FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				546C34CBA59B7087909B969D327A5F79 /* FontBlaster-dummy.m in Sources */,
+				57551CC1B893D822BBFD280C6D79AFE8 /* FontBlaster.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D165FD022A92AA2BDBC99F07606F539D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -365,24 +899,60 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2078323FED3BB23FD27E5749689CCDA7 /* PBXTargetDependency */ = {
+		01796BC3F35941660FEE5D11AE062036 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIColor_Hex_Swift;
+			target = A033743049543D9486AB749432398B01 /* UIColor_Hex_Swift */;
+			targetProxy = CECEE688B6189477494668058FFF8D7A /* PBXContainerItemProxy */;
+		};
+		3A6E0C533E9FC6E35FDB3916BEAA9D2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FontBlaster;
+			target = 6FA35690ED07C4898525CDCDE4284645 /* FontBlaster */;
+			targetProxy = 338281FBB81F78EE9E26AE847AB1B67B /* PBXContainerItemProxy */;
+		};
+		5AB27AC6A855A8FEF34549396CD25BA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FontBlaster;
+			target = 6FA35690ED07C4898525CDCDE4284645 /* FontBlaster */;
+			targetProxy = E597CB5AB5D9979FD8A6404C53E1EF90 /* PBXContainerItemProxy */;
+		};
+		8B48B569037DCA5D32A7F877A572A9E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIColor_Hex_Swift;
+			target = A033743049543D9486AB749432398B01 /* UIColor_Hex_Swift */;
+			targetProxy = 92E998639625A8BD91D3B31F83CFAFD6 /* PBXContainerItemProxy */;
+		};
+		97CD8BD1B1DE00B4B6B59683B80C6162 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "MGSettingsKit-MGSettingsKit";
-			target = BC124B06492195BE5297DC629935F85B /* MGSettingsKit-MGSettingsKit */;
-			targetProxy = 9EEAB42FA0C90EAF9807A2C724F6E425 /* PBXContainerItemProxy */;
+			target = AAC5CA8648E13CC55418CD38508AA08D /* MGSettingsKit-MGSettingsKit */;
+			targetProxy = D99456B1BC399752A0A94EA752A68DE8 /* PBXContainerItemProxy */;
 		};
-		4F1357D4159B242F2C15A583A13F4A27 /* PBXTargetDependency */ = {
+		BD6A3FB5401CE71B31B3246A330285D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MGTemplateKit;
+			target = 387D2A2A70A5866678C955080D3D118F /* MGTemplateKit */;
+			targetProxy = D58486DEAA96474846BC3E321ECEF623 /* PBXContainerItemProxy */;
+		};
+		DD1223F8A64BD575EC401027B3845E3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MGTemplateKit-MGTemplateKit";
+			target = B51378EA2A48EAE8DA28704A1BAF3F9A /* MGTemplateKit-MGTemplateKit */;
+			targetProxy = 0FB0E5EEFF10F63B0689585053638D66 /* PBXContainerItemProxy */;
+		};
+		F7C1FBDFE083F14D4880BFC0F4F90951 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MGSettingsKit;
-			target = 8F1139AB32FF680AE215FA36C9DB1137 /* MGSettingsKit */;
-			targetProxy = 37455DE9BEFEC44C9CD69AE5211B6268 /* PBXContainerItemProxy */;
+			target = 1850410C11F4DA18F2C2FFE6DD98AEE9 /* MGSettingsKit */;
+			targetProxy = 01AE252E438F69A4247FCD28612CE957 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		22482A00BC6ABFB3AC25FB8A324E1DA3 /* Release */ = {
+		0C7775709004F081B56C71AA3012E38B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32B1FCE4E14125A3F0F0CC521EBB619E /* MGSettingsKit.xcconfig */;
+			baseConfigurationReference = A017DAB39B1E82636B90545DDB75243D /* MGSettingsKit.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -413,6 +983,71 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		0D1A4907A3B778A6F65D21EC8E54F54B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5761FB6F532EC06E4A3DC2F69188834C /* MGTemplateKit.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MGTemplateKit/MGTemplateKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MGTemplateKit/MGTemplateKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MGTemplateKit/MGTemplateKit.modulemap";
+				PRODUCT_MODULE_NAME = MGTemplateKit;
+				PRODUCT_NAME = MGTemplateKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		27082C211937ECDFB4B63FE447AF26EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09B3D8A66A1BF5311E7E27F383E960ED /* UIColor_Hex_Swift.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
+				PRODUCT_MODULE_NAME = UIColor_Hex_Swift;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		4093433A309EFE160336AC736594AB22 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -478,29 +1113,11 @@
 			};
 			name = Debug;
 		};
-		5704772DFFD80F55950F5F7FAE69E550 /* Release */ = {
+		6B7091D093E4B890443EFC1AC2989482 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32B1FCE4E14125A3F0F0CC521EBB619E /* MGSettingsKit.xcconfig */;
+			baseConfigurationReference = 09B3D8A66A1BF5311E7E27F383E960ED /* UIColor_Hex_Swift.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MGSettingsKit";
-				INFOPLIST_FILE = "Target Support Files/MGSettingsKit/ResourceBundle-MGSettingsKit-MGSettingsKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = MGSettingsKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		5D61FF4975788BDD007D355D5CDC9F7B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21B08DA8200670B4F8A47124155FD609 /* Pods-MGSettingsKit_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -510,26 +1127,26 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MGSettingsKit_Example/Pods-MGSettingsKit_Example-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MGSettingsKit_Example/Pods-MGSettingsKit_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
+				PRODUCT_MODULE_NAME = UIColor_Hex_Swift;
+				PRODUCT_NAME = UIColor_Hex_Swift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		723B5C5251CD642DDBE1BEFD29F85622 /* Release */ = {
+		81BCD7B4702425698C70D7D0B8E8F02C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9068A534351233766D129FA89933AEB4 /* Pods-MGSettingsKit_Example.release.xcconfig */;
 			buildSettings = {
@@ -564,6 +1181,39 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		86A563DFAC20D93C6A99519A09AE2C8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A017DAB39B1E82636B90545DDB75243D /* MGSettingsKit.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MGSettingsKit/MGSettingsKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MGSettingsKit/MGSettingsKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MGSettingsKit/MGSettingsKit.modulemap";
+				PRODUCT_MODULE_NAME = MGSettingsKit;
+				PRODUCT_NAME = MGSettingsKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		924D56B1D59CD3049300EAEEA256114E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -618,16 +1268,164 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		AB017C2237C6866B7850EA096D033BD3 /* Debug */ = {
+		9F85E09B2A05A74B36704F8F2A24A33B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32B1FCE4E14125A3F0F0CC521EBB619E /* MGSettingsKit.xcconfig */;
+			baseConfigurationReference = A017DAB39B1E82636B90545DDB75243D /* MGSettingsKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MGSettingsKit";
+				INFOPLIST_FILE = "Target Support Files/MGSettingsKit/ResourceBundle-MGSettingsKit-MGSettingsKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = MGSettingsKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		A61961A88BFE440CC386318F4E5F610A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5761FB6F532EC06E4A3DC2F69188834C /* MGTemplateKit.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MGTemplateKit/MGTemplateKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MGTemplateKit/MGTemplateKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MGTemplateKit/MGTemplateKit.modulemap";
+				PRODUCT_MODULE_NAME = MGTemplateKit;
+				PRODUCT_NAME = MGTemplateKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AA36D4C0CD4166CDBD7F909EBCDD52DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5761FB6F532EC06E4A3DC2F69188834C /* MGTemplateKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MGTemplateKit";
+				INFOPLIST_FILE = "Target Support Files/MGTemplateKit/ResourceBundle-MGTemplateKit-MGTemplateKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = MGTemplateKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B7674B4E780B11327EBED4D2716B1F45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72F0B9462CA19A8D08ABEF79D2EC7C9F /* FontBlaster.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FontBlaster/FontBlaster-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FontBlaster/FontBlaster-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FontBlaster/FontBlaster.modulemap";
+				PRODUCT_MODULE_NAME = FontBlaster;
+				PRODUCT_NAME = FontBlaster;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B8E697A51DE509AB44BA820AEA11C8B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5761FB6F532EC06E4A3DC2F69188834C /* MGTemplateKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MGTemplateKit";
+				INFOPLIST_FILE = "Target Support Files/MGTemplateKit/ResourceBundle-MGTemplateKit-MGTemplateKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = MGTemplateKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D2170D0DAD00ACE069AA7C0B0A098DAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21B08DA8200670B4F8A47124155FD609 /* Pods-MGSettingsKit_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MGSettingsKit_Example/Pods-MGSettingsKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MGSettingsKit_Example/Pods-MGSettingsKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F2CDB61D30E6106478346FAF5385A676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A017DAB39B1E82636B90545DDB75243D /* MGSettingsKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MGSettingsKit";
@@ -641,12 +1439,11 @@
 			};
 			name = Debug;
 		};
-		D199578E0C2B9F0E8DFB373EA15DE013 /* Debug */ = {
+		F772117177537AAC86A606446ADF4145 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32B1FCE4E14125A3F0F0CC521EBB619E /* MGSettingsKit.xcconfig */;
+			baseConfigurationReference = 72F0B9462CA19A8D08ABEF79D2EC7C9F /* FontBlaster.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -656,32 +1453,42 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MGSettingsKit/MGSettingsKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MGSettingsKit/MGSettingsKit-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FontBlaster/FontBlaster-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FontBlaster/FontBlaster-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MGSettingsKit/MGSettingsKit.modulemap";
-				PRODUCT_MODULE_NAME = MGSettingsKit;
-				PRODUCT_NAME = MGSettingsKit;
+				MODULEMAP_FILE = "Target Support Files/FontBlaster/FontBlaster.modulemap";
+				PRODUCT_MODULE_NAME = FontBlaster;
+				PRODUCT_NAME = FontBlaster;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2653C2063760B21705E67A1B5EBF44DA /* Build configuration list for PBXNativeTarget "Pods-MGSettingsKit_Example" */ = {
+		07D14D6B34D1CF2F815376AC4F26BB65 /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D61FF4975788BDD007D355D5CDC9F7B /* Debug */,
-				723B5C5251CD642DDBE1BEFD29F85622 /* Release */,
+				27082C211937ECDFB4B63FE447AF26EB /* Debug */,
+				6B7091D093E4B890443EFC1AC2989482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E374FFD7430B78AE7C36B8D7BC1F07F /* Build configuration list for PBXNativeTarget "FontBlaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7674B4E780B11327EBED4D2716B1F45 /* Debug */,
+				F772117177537AAC86A606446ADF4145 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -695,20 +1502,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7DDD23B0B817534CBD9E01AB316B2254 /* Build configuration list for PBXNativeTarget "MGSettingsKit" */ = {
+		6F6AB229F60E81F6EB7C5D0342CE846B /* Build configuration list for PBXNativeTarget "MGTemplateKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D199578E0C2B9F0E8DFB373EA15DE013 /* Debug */,
-				22482A00BC6ABFB3AC25FB8A324E1DA3 /* Release */,
+				0D1A4907A3B778A6F65D21EC8E54F54B /* Debug */,
+				A61961A88BFE440CC386318F4E5F610A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B4D98152DF75F0BC149AE4E0F52D1D96 /* Build configuration list for PBXNativeTarget "MGSettingsKit-MGSettingsKit" */ = {
+		7B0705D2D23C8F6B59A9F7CDC76B4FCE /* Build configuration list for PBXNativeTarget "MGSettingsKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB017C2237C6866B7850EA096D033BD3 /* Debug */,
-				5704772DFFD80F55950F5F7FAE69E550 /* Release */,
+				86A563DFAC20D93C6A99519A09AE2C8E /* Debug */,
+				0C7775709004F081B56C71AA3012E38B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81CC2A29BA89BBDCD37F2B0C6E1AEFA7 /* Build configuration list for PBXNativeTarget "Pods-MGSettingsKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2170D0DAD00ACE069AA7C0B0A098DAE /* Debug */,
+				81BCD7B4702425698C70D7D0B8E8F02C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92777947E7E983794887E5A0F0388C21 /* Build configuration list for PBXNativeTarget "MGTemplateKit-MGTemplateKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8E697A51DE509AB44BA820AEA11C8B3 /* Debug */,
+				AA36D4C0CD4166CDBD7F909EBCDD52DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99291677DB56E743DA2990EBC498C349 /* Build configuration list for PBXNativeTarget "MGSettingsKit-MGSettingsKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2CDB61D30E6106478346FAF5385A676 /* Debug */,
+				9F85E09B2A05A74B36704F8F2A24A33B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

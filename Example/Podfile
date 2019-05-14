@@ -2,5 +2,5 @@ use_frameworks!
 
 target 'MGSettingsKit_Example' do
   pod 'MGSettingsKit', :path => '../'
-
+  pod 'MGTemplateKit', :git => 'https://haraldbregu:4a4d1162147e80549f22cafb59060bdf59c4934a@github.com/HaraldBregu/MGTemplateKit.git'
 end
