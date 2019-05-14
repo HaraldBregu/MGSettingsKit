@@ -138,6 +138,8 @@ extension MGSettingsController: UITableViewDataSource, UITableViewDelegate {
             cell?.switchControl?.addTarget(self, action: #selector(`switch`(sender:)), for: .valueChanged)
         }
 
+        cell?.sliderMinImageView?.isHidden = true
+        cell?.sliderMaxImageView?.isHidden = true
         if let slider = item.slider {
             cell?.sliderContainerView?.isHidden = false
             cell?.sliderControl?.isHidden = false
@@ -148,8 +150,10 @@ extension MGSettingsController: UITableViewDataSource, UITableViewDelegate {
             cell?.sliderControl?.maximumValue = slider.maxValue
             cell?.sliderControl?.minimumTrackTintColor = assets.color.controlPrimary
             cell?.sliderControl?.maximumTrackTintColor = assets.color.controlSecondary
-            cell?.sliderMinImageView?.image = assets.image.lightMinimum
-            cell?.sliderMaxImageView?.image = assets.image.lightMaximum
+            cell?.sliderMinImageView?.isHidden = slider.minImage == nil
+            cell?.sliderMaxImageView?.isHidden = slider.maxImage == nil
+            cell?.sliderMinImageView?.image = slider.minImage
+            cell?.sliderMaxImageView?.image = slider.maxImage
             cell?.sliderControl?.indexPath = indexPath
             cell?.sliderControl?.addTarget(self, action: #selector(slide(sender:)), for: .valueChanged)
         }
@@ -227,8 +231,6 @@ public class MGSettingsCell: UITableViewCell {
     public override func awakeFromNib() {
         super.awakeFromNib()
        
-//        primaryImageView?.layer.borderColor = #colorLiteral(red: 0.3568627451, green: 0.3568627451, blue: 0.3568627451, alpha: 1)
-//        primaryImageView?.layer.borderWidth = 1
         primaryImageView?.layer.cornerRadius = 3
         primaryImageView?.clipsToBounds = true
 

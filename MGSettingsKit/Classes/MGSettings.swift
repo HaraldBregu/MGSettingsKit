@@ -44,8 +44,7 @@ public protocol MGSettingsFont {
 }
 
 public protocol MGSettingsImage {
-    var lightMinimum: UIImage? { get set }
-    var lightMaximum: UIImage? { get set }
+
 }
 
 public protocol MGSettingsColor {
@@ -92,6 +91,8 @@ public class MGSettingsSliderItem {
     public var value: Float = 0.5
     public var minValue: Float = 0.0
     public var maxValue: Float = 1.0
+    public var minImage: UIImage?
+    public var maxImage: UIImage?
     public init (value: Float, minValue: Float, maxValue: Float) {
         self.value = value
         self.minValue = minValue

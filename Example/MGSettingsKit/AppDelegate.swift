@@ -74,6 +74,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         lightItem.section = MGSettingsSectionItem(identifier: "SETTINGS")
         lightItem.title = "Light"
         lightItem.slider = MGSettingsSliderItem(value: 0.3, minValue: 0.0, maxValue: 1.0)
+        
+        lightItem.slider?.minImage = UIImage(icon: .ionicons(.androidSunny), size: CGSize(width: 16, height: 16), textColor: .white)
+        lightItem.slider?.maxImage = UIImage(icon: .ionicons(.androidSunny), size: CGSize(width: 24, height: 24), textColor: .white)
+
         items.append(lightItem)
 
         let rateAppItem = MGSettingsItem()
@@ -117,9 +121,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             font: SettingsFont(
                 tableViewCellTitle: UIFont.systemFont(ofSize: 17),
                 tableViewCellSubtitle: UIFont.systemFont(ofSize: 15)),
-            image: SettingsImage(
-                lightMinimum: UIImage(icon: .ionicons(.androidSunny), size: CGSize(width: 16, height: 16), textColor: .white),
-                lightMaximum: UIImage(icon: .ionicons(.androidSunny), size: CGSize(width: 24, height: 24), textColor: .white)),
+            image: SettingsImage(),
             color: SettingsColor(
                 navigationBar: #colorLiteral(red: 0.09019607843, green: 0.09019607843, blue: 0.09019607843, alpha: 1),
                 navigationBarContent: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1),
@@ -216,8 +218,6 @@ struct SettingsFont: MGSettingsFont {
 }
 
 struct SettingsImage: MGSettingsImage {
-    var lightMinimum: UIImage?
-    var lightMaximum: UIImage?
 }
 
 struct SettingsColor: MGSettingsColor {
